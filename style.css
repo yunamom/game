@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;   
+}
+.container{ /*가운데 위치할수있게 작성해준다.*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /*flex 아이템이 중앙에 위치할수있게 한다.*/
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 32px;
+}
+.lotto{
+    text-align: center; /*ball 안의 숫자가 가운데올수있게 한다.*/
+}
+.numbers{ /* ball 이 보여질 테두리를 만들어 준다.*/
+  width: 350px; height: 60px;
+  border: 1px solid black;
+}
