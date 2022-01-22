@@ -6,12 +6,15 @@ const resetButton = document.querySelector("#reset")
 
 const lottoNumbers = []
 //로또 번호를 담을 배열을 생성합니다.
-const colors = ["red","orange","yellow","green","blue"]
+const colors = ["red","orange","yellow","green","blue","purple"]
 //로또 볼에 색을 더해줄수있는 배열을 생성합니다.
 
-function paintNumber(number){
+function paintNumber(number,){
+    const i = lottoNumbers.length
     const eachNumDiv = document.createElement("div")
     eachNumDiv.classList.add('eachnum')
+    eachNumDiv.style.backgroundColor = colors[i-1]
+    //색상을 입혀줍니다.
     eachNumDiv.textContent = number
     numbersDiv.appendChild(eachNumDiv)
 }
