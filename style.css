@@ -16,6 +16,22 @@ body{
     text-align: center; /*ball 안의 숫자가 가운데올수있게 한다.*/
 }
 .numbers{ /* ball 이 보여질 테두리를 만들어 준다.*/
-  width: 350px; height: 60px;
-  border: 1px solid black;
+    width: 350px; height: 60px;
+    border: 1px solid black;
+
+    border-radius: 10px; /*테두리 둥글게 만들기*/
+    display: flex;
+    justify-content: space-around; 
+    /* 로또 볼의 간격을 넓혀준다. 이게없으면 서로 달라붙어있게됨.*/
+    align-items: center; /* 로또 볼이 정사각형으로 출력될수있게 한다. */
+}
+
+.eachnum{ /* ball 모양을 만들어준다.*/
+    font-size: 0.7em;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    /* ball 안의 숫자가 ball 중앙에 위치할수있게 한다. */
+    align-items: center;
 }
