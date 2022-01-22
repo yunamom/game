@@ -30,3 +30,8 @@ drawButton.addEventListener("click",function(){
     }
    // console.log(lottoNumbers) //colsole 에서 확인하기.
 })
+resetButton.addEventListener("click",function(){
+    lottoNumbers.splice(0,6)
+    numbersDiv.innerHTML = ""
+  //reset 버튼을 누르면 numbers 안에 값을 비워준다.
+})
